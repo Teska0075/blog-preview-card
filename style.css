@@ -6,10 +6,7 @@
     font-family: "TP_2";
     src: url(./assets/fonts/static/Figtree-Medium.ttf);
 }
-@font-face {
-    font-family: "TP_3";
-    src: url(./assets/fonts/static/Figtree-Medium.ttf);
-}
+
 @font-face {
     font-family: "TP_3_BOLD";
     src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
@@ -40,7 +37,9 @@ body{
     gap: 24px;
 }
 
-.cardContainer img{
+.articlePic{
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 .textContainer{
@@ -60,7 +59,7 @@ body{
     font-size: 14px;
 }
 .date{
-    font-family: "TP_3";
+    font-family: "TP_2";
     font-size: 14px;
     line-height: 150%;
 }
@@ -68,6 +67,11 @@ body{
     font-family: "TP_1";
     font-size: 24px;
     line-height: 150%;
+    transition: color 0.3s ease;
+}
+.title:hover{
+    color: #F4D04E;
+    cursor: pointer;
 }
 .info{
     font-family: "TP_2";
@@ -89,4 +93,13 @@ body{
     font-family: "TP_3_BOLD";
     font-size: 14px;
     line-height: 150%;
+}
+
+@media (max-width: 480px) {
+    .cardContainer {
+        width: 327px;
+        height: 501px;
+        padding: 20px;
+        gap: 20px;
+    }
 }
