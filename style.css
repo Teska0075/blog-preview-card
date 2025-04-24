@@ -1,16 +1,18 @@
 @font-face {
-    font-family: "figMedium";
-    src: url(./assets/fonts/static/Figtree-Medium.ttf);
-    /* font-size: 14px;
-    line-height: 150%;
-    letter-spacing: 0px; */
+    font-family: "TP_1";
+    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
 }
 @font-face {
-    font-family: "figBold";
+    font-family: "TP_2";
+    src: url(./assets/fonts/static/Figtree-Medium.ttf);
+}
+@font-face {
+    font-family: "TP_3";
+    src: url(./assets/fonts/static/Figtree-Medium.ttf);
+}
+@font-face {
+    font-family: "TP_3_BOLD";
     src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: 0px;
 }
 *{
     margin: 0;
@@ -41,12 +43,50 @@ body{
 .cardContainer img{
     border-radius: 10px;
 }
-
-.infoContainer a{
+.textContainer{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.stat{
+    width: 82px;
     padding: 4px 12px;
-    font-family: "figBold";
-    background-color: #f4D04E;
+    font-family: "TP_3_BOLD";
+    line-height: 150%;
+    background-color: #F4D04E;
     border-radius: 4px;
     gap: 8px;
+    font-size: 14px;
+}
+.date{
+    font-family: "TP_3";
+    font-size: 14px;
+    line-height: 150%;
+}
+.title{
+    font-family: "TP_1";
+    font-size: 24px;
+    line-height: 150%;
+}
+.info{
+    font-family: "TP_2";
+    font-size: 16px;
+    line-height: 150%;
+    color: #6B6B6B;
 }
 
+.author{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.authorPic{
+    width: 32px;
+    height: 32px;
+}
+.authorName{
+    font-family: "TP_3_BOLD";
+    font-size: 14px;
+    line-height: 150%;
+}
